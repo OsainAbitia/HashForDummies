@@ -27,7 +27,7 @@ int main(){
     bool restart_hash = true;
     bool select_metod = true;
     
-    while(restart_hash){//While para poder elegir distintos
+    while(restart_hash){//While para poder elegir distintos Hash
         emptyVec();
         cout<<"Ingrese que metodo de hash quiere usar: \n1.- Hash por modulo \n2.- Hash cuadrado \n3.- Hash plegamiento \n4.- Hash por truncamiento \n5.-Salir"<<endl;
         cin>>choice;
