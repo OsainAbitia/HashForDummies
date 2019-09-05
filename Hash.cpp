@@ -39,7 +39,7 @@ int main(){
         switch(choice){
             case 1:
                 
-                while(select_metod){//while para seleccionar que es lo que se quiere hacer respecto a cada metodo
+                while(select_metod){//while para seleccionar accion a cada metodo
                     while(choice){
                         
                         cout << "+-------Hash por Modulo-------+\n";
@@ -70,7 +70,7 @@ int main(){
                 
             case 2:
                 
-                while(select_metod){//while para seleccionar que es lo que se quiere hacer respecto a cada metodo
+                while(select_metod){//while para seleccionar accion a cada metodo
                     while(choice){
                         
                         cout << "+------Hash por Cuadrado------+\n";
@@ -102,7 +102,7 @@ int main(){
                 
             case 3:
                 
-                while(select_metod){//while para seleccionar que es lo que se quiere hacer respecto a cada metodo
+                while(select_metod){//while para seleccionar accion a cada metodo
                     while(choice){
                         
                         cout << "+-----Hash por plegamiento----+\n";
@@ -132,7 +132,7 @@ int main(){
                 
                 
             case 4:
-                while(select_metod){//while para seleccionar que es lo que se quiere hacer respecto a cada metodo
+                while(select_metod){//while para seleccionar accion a cada metodo
                     while(choice){
                         
                         cout << "+----Hash por Truncamiento----+\n";
@@ -179,6 +179,7 @@ void emptyVec(){
         vec [i] = 0;
     }
 }
+
 //Funcion para agregar hash por modulo
 int hashMod(){
     int num;
@@ -193,8 +194,7 @@ int hashMod(){
     
 }
 
-//Funcion para agregar hash por cuadrado
-
+//Funcion para agregar hash cuadrado
 int hashPow(){
     int num;
     string num1;
@@ -226,11 +226,12 @@ int hashPow(){
     
     index = stoi(num1_last + num2_first) + 1;
     
-    // Llamar a la funcion recursiva para aÒadirlo al vector111
+    // Llamar a la funcion recursiva para agregarlo al vector111
     addToArray(index, num, vector1);
     return 1;
 }
 
+//Funcion para agregar hash por plegamiento
 int hashPleg(){
     int num;
     string num1;
@@ -270,7 +271,7 @@ int hashPleg(){
     return 1;
 }
 
-
+//Funcion para agregar hash por Truncamiento
 int hashTrunc(){
     int num;
     string num1;
